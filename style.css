@@ -1,0 +1,79 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+h1 {
+    color: #E88977;
+    font-size: 36px;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: black;
+    font-size: 24px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+/* Navbar styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #E88977;
+    transform: scale(1.1);
+}
+
+/* Gallery styling */
+#gallery {
+    display: grid; /* Use grid layout for perfect alignment */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive column size */
+    gap: 20px; /* Space between images */
+    margin: 20px auto; /* Center the gallery on the page */
+    max-width: 90%; /* Prevent gallery from stretching too wide */
+}
+
+#gallery img {
+    width: 100%; /* Image fits within its grid cell */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images crop nicely without distortion */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Adds zoom effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+#1st, #2nd {
+    padding: 100px 20px; /* Adds spacing for sections */
+    margin-top: 80px; /* Prevent overlap with navbar */
+}
