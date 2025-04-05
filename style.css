@@ -1,3 +1,5 @@
+
+
 /* Basic styling for the body */
 body {
     font-family: Arial, sans-serif;
@@ -20,6 +22,11 @@ h2 {
     font-size: 24px;
     margin-top: 50px;
     text-transform: uppercase;
+}
+
+h4 {
+    color: black;
+    margin-top: 50px;
 }
 
 /* Navbar styling */
@@ -59,7 +66,7 @@ nav a:hover {
 
 #gallery img {
     width: 100%; /* Image fits within its grid cell */
-    height: 200px; /* Fixed height for all images */
+    height: 250px; /* Fixed height for all images */
     object-fit: cover; /* Ensures images crop nicely without distortion */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */

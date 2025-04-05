@@ -1,3 +1,5 @@
+
+
 document.querySelectorAll('#gallery img').forEach(image => {
     image.addEventListener('click', () => {
         const modal = document.createElement('div');
